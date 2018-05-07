@@ -5,6 +5,6 @@ const Landing = () => (
     <h2>Emaily!</h2>
     Collect feedback from your users
   </div>
-)
+);
 
 export default Landing;
