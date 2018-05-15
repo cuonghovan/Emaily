@@ -28,6 +28,7 @@ app.use(passport.session());
 // 1. Fisrt looking for request handlers.
 require("./routes/authRoutes")(app);
 require("./routes/billingRoutes")(app);
+require("./routes/surveyRoutes")(app);
 
 if (process.env.NODE_ENV === 'production') {
   // 2. Express will serve up production assets
