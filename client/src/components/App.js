@@ -5,7 +5,7 @@ import * as actions from '../actions';
 
 import Header from "./Header";
 import Landing from './Landing';
-const Dashboard = () => <h2>Dashboard</h2>;
+import Dashboard from './Dashboard';
 const ServeyNew = () => <h2>ServeyNew</h2>;
 
 class App extends React.Component {
@@ -20,7 +20,7 @@ class App extends React.Component {
           <Header />
           <Route exact path="/" component={Landing} />
           <Route exact path="/surveys" component={Dashboard} />
-          <Route path="/serveys/new" component={ServeyNew} />
+          <Route path="/surveys/new" component={ServeyNew} />
         </div>
       </BrowserRouter>
     );
