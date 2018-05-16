@@ -12,3 +12,10 @@ export const handleStripeToken = token => async dispatch => {
   
   dispatch({type: FETCH_USER, payload: res.data});
 };
+
+export const submitSurvey = values => async dispatch => {
+  // TODO: matching form value fields
+  const res = await axios.post('/api/surveys', values);
+  
+  dispatch({type: FETCH_USER, payload: res.data});
+};
