@@ -35,4 +35,9 @@ module.exports = app => {
   app.get('/api/surveys/thanks', (req, res) => {
     res.send('Thanks for voting!');
   });
+
+  app.post('/api/surveys/webhooks', (req, res) => {
+    console.log(req.body);
+    res.send({});
+  });
 };
